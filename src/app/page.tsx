@@ -1,7 +1,12 @@
 import Link from 'next/link'
-import { FileComponent } from './components/FileComponent'
+import { FileComponent, preload } from './components/FileComponent'
 
 export default function Home() {
+  preload("./tmp/solidHome.txt");
+  preload("./tmp/solidHome2.txt");
+  preload("./tmp/solidHome3.txt");
+  preload("./tmp/solidHome4.txt");
+
   return (
     <>
       <h1>Hello World</h1>
